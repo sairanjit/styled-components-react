@@ -1,10 +1,17 @@
 import React from 'react'
-import { StyledHeader } from './styles/Header.styles'
+import { Button } from './styles/Button.styled'
+import { Container } from './styles/Container.styled'
+import { Logo, Nav, StyledHeader } from './styles/Header.styles'
 
 const Header = () => {
   return (
     <StyledHeader>
-      <h1>Hubble</h1>
+      <Container>
+        <Nav>
+          <Logo src="./images/logo.svg" alt="" />
+          <Button>Try it Free</Button>
+        </Nav>
+      </Container>
     </StyledHeader>
   )
 }

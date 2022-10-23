@@ -5,5 +5,6 @@ export const theme: DefaultTheme = {
     header: '#EBFBFF',
     body: '#FFF',
     footer: '#003333'
-  }
+  },
+  mobile: '768px'
 }

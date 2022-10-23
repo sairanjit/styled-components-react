@@ -7,5 +7,6 @@ declare module 'styled-components' {
       body: string
       footer: string
     }
+    mobile: string
   }
 }

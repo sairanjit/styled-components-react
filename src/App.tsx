@@ -1,8 +1,11 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
+import Card from './components/Card'
+import Footer from './components/Footer'
 import Header from './components/Header'
 import { Container } from './components/styles/Container.styled'
 import GlobalStyles from './components/styles/Global'
+import content from './content'
 import { theme } from './theme'
 
 const App = () => {
@@ -11,8 +14,11 @@ const App = () => {
       <GlobalStyles />
       <Header />
       <Container>
-        <h1>Hello World</h1>
+        {content.map((item) => (
+          <Card key={item.id} item={item} />
+        ))}
       </Container>
+      <Footer />
     </ThemeProvider>
   )
 }
